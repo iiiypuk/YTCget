@@ -26,6 +26,15 @@ div.content {
 div.content img {
   border: 1px solid #808080;
   max-width: 100%;
+  border-radius: 8px;
+}
+div.content p {
+  color: #808080;
+  text-align: center;
+}
+div.content a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 input, button {
@@ -34,19 +43,23 @@ input, button {
   background-color: #232323;
   font-size: 1rem;
   padding: 8px;
+  transition: 250ms all;
 }
 
 input {
   width: calc(100% - 100px);
   color: #808080;
+  border-radius: 8px 0 0 8px;
 }
 
 input::placeholder {
   color: #818181;
+  transition: 250ms all;
 }
 input:focus {
   background-color: #606060;
   color: #ffffff;
+  transition: 250ms all;
 }
 
 button {
@@ -54,7 +67,13 @@ button {
   color: #606060;
   border-left: 0;
   width: 100px;
+  border-radius: 0 8px 8px 0;
 }
 button:hover {
   color: #808080;
+  color: #ffffff;
+  transition: 250ms all;
+}
+button:active {
+  background-color: #606060;
 }
